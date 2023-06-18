@@ -13,7 +13,7 @@ public:
             return false;
         ListNode* s=head;
         ListNode* f=head;
-        while(f->next &&  f->next->next)
+        while(f!=NULL &&  f->next!=NULL)
         {
             f=f->next->next;
             s=s->next;
