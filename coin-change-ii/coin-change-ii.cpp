@@ -4,7 +4,7 @@ int fun(vector<int>& arr,int ind, int T, vector<vector<long>>& dp)
 {
     if(ind == 0)
         return (T%arr[0]==0);
-    
+
     if(dp[ind][T]!=-1)
         return dp[ind][T];
         
