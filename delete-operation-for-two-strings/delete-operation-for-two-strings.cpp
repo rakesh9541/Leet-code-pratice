@@ -16,12 +16,9 @@ public:
         return f(text1,text2,n1,n2,dp);
     }
     int minDistance(string word1, string word2) {
-        int a=longestCommonSubsequence(word1,word2);
         int n1=word1.size();
         int n2=word2.size();
-        n1=n1-a;
-        n2=n2-a;
-        return n1+n2;
+        return n1+n2-2*longestCommonSubsequence(word1,word2);
         
     }
 };
