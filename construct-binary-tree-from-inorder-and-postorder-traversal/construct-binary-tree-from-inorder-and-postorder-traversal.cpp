@@ -17,7 +17,7 @@ public:
         int ind = mp[postorder[pe]];
         int nelem = ind - is;
         TreeNode* root = new TreeNode(postorder[pe]);
-        root->left =  build(inorder, postorder, is, ind, ps, ps + nelem - 1, mp);
+        root->left =  build(inorder, postorder, is, ind-1, ps, ps + nelem - 1, mp);
         root->right = build(inorder, postorder, ind+1,  ie, ps + nelem, pe-1, mp);
         return root;
     }
