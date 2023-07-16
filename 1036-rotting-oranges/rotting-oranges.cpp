@@ -44,8 +44,7 @@ public:
         }
         if(countFresh!=countRotten)
              return -1;
-        else if(countFresh==0) 
-            return 0;
+       
         return time;
     }
 };
